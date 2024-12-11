@@ -1,0 +1,47 @@
+.bestSellersContainer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Subtle background for better contrast */
+    border-radius: 10px; /* Smooth rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.bestSellersGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px; /* Added spacing from heading */
+}
+
+.bestSellerItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    max-width: 150px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.bestSellerItem:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.bestSellerImage {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Subtle border around images */
+}
+
+.bestSellerTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.4; /* Better readability for longer titles */
+    color: #333; /* Darker text for readability */
+}

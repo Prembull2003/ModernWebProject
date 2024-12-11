@@ -1,0 +1,71 @@
+/* General container styling for authentication forms */
+.authContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Card for form styling */
+  .authForm {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  /* Header styling */
+  .authHeader {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Input field styling */
+  .authInput {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* Button styling */
+  .authButton {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .authButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Link styling for navigation */
+  .authLink {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .authLink:hover {
+    color: #0056b3;
+  }
+  

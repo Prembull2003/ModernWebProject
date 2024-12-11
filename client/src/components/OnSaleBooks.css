@@ -1,0 +1,106 @@
+/* Container styling for the OnSaleBooks section */
+.onSaleBooksContainer {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Header title styling */
+.onSaleBooksContainer h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Horizontal layout for books */
+.bookGrid {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Styling for individual book items */
+.bookCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-width: 180px; 
+    max-width: 200px;
+}
+
+/* Hover effect for book items */
+.bookCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for book cover image */
+.bookCard img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Styling for book title */
+.bookCard h3 {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Author section */
+.bookCard p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Price section styling */
+.price {
+    font-size: 1em;
+    margin-top: 5px;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+/* Scrollbar customization */
+.bookGrid::-webkit-scrollbar {
+    height: 8px;
+}
+
+.bookGrid::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+/* Original price with strikethrough */
+.originalPrice {
+    color: #777;
+    text-decoration: line-through;
+    margin-right: 5px;
+    font-size: 0.9em;
+  }
+  
+  /* Highlighted sale price */
+  .salePrice {
+    color: #d9534f;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
