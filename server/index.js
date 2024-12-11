@@ -25,7 +25,7 @@ let cart = [];
 app.get('/api/best-sellers', async (req, res) => {
   try {
     const response = await fetch(
-      'https://www.googleapis.com/books/v1/volumes?q=subject:fiction&orderBy=relevance&key=AIzaSyAWnVgWuSJaK2nKZDMaNQdhizt5DcKUwnc'
+      'https://www.googleapis.com/books/v1/volumes?q=subject:fiction&orderBy=relevance&key=YOUR_API_KEY'
     );
     const data = await response.json();
     if (data.items) {
@@ -43,7 +43,7 @@ app.get('/api/best-sellers', async (req, res) => {
 app.get('/api/on-sale-books', async (req, res) => {
   try {
     const response = await fetch(
-      'https://www.googleapis.com/books/v1/volumes?q=onsale&filter=paid-ebooks&key=AIzaSyAWnVgWuSJaK2nKZDMaNQdhizt5DcKUwnc'
+      'https://www.googleapis.com/books/v1/volumes?q=onsale&filter=paid-ebooks&key=YOUR_API_KEY'
     );
     const data = await response.json();
     if (data.items) {
